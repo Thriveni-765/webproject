@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Village Health Support</h1>
+        <p>Helping villagers access medical care easily</p>
+    </header>
+
+    <section class="emergency">
+        <h2>Emergency Contacts</h2>
+        <p><strong>Ambulance:</strong> 108</p>
+        <p><strong>Doctor Helpline:</strong> 1800-123-456</p>
+    </section>
+
+    <section class="hospitals">
+        <h2>Find Nearby Hospitals</h2>
+        <input type="text" id="searchHospital" placeholder="Search hospitals..." onkeyup="filterHospitals()">
+        <ul id="hospitalList">
+            <li>City Hospital</li>
+            <li>Green Health Clinic</li>
+            <li>Village Medical Center</li>
+            <li>Care & Cure Hospital</li>
+        </ul>
+    </section>
+
+    <section class="consultation">
+        <h2>Consult a Doctor</h2>
+        <form id="consultForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="issue" placeholder="Describe Your Health Issue" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <section class="first-aid">
+        <h2>Basic First-Aid Tips</h2>
+        <ul>
+            <li><strong>Burns:</strong> Run cool water over the burn for 10 minutes.</li>
+            <li><strong>Bleeding:</strong> Apply firm pressure with a clean cloth.</li>
+            <li><strong>Choking:</strong> Perform the Heimlich maneuver.</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
