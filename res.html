@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Management System</title>
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      color: #0072ff;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #0072ff;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056d8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to medha services</h1>
+    <p>Efficient and Smart Hospital Management System to serve patients better.</p>
+    <button id="getStartedBtn">Get Started</button>
+  </div>
+
+  <script>
+    document.getElementById('getStartedBtn').addEventListener('click', function() {
+      // Redirect to dashboard, login, or homepage
+      window.location.href = "login.html"; // Change this link to your actual page
+    });
+  </script>
+
+</body>
+</html>
